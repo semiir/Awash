@@ -1,0 +1,30 @@
+$('#google-map').gMap({
+	controls: {
+        panControl: true,
+        zoomControl: true,
+        mapTypeControl: true,
+        scaleControl: true,
+        streetViewControl: true,
+        overviewMapControl: true
+    },
+
+    address: "68-82 Hopkins St, Footscray, Victoria 3011, Australia",
+	maptype: 'ROADMAP',
+	zoom: 15,
+	markers:[
+		{
+			latitude: -37.799958,
+			longitude: 144.902708,
+			html: "_latlng"
+		},
+		{
+			address: "68-82 Hopkins St, Footscray, Victoria 3011, Australia",
+			html: "Awash African Restaurant",
+			popup: true
+		},
+		{
+			address: "68-82 Hopkins St, Footscray, Victoria 3011, Australia",
+			html: "_address"
+		}
+	]
+});
